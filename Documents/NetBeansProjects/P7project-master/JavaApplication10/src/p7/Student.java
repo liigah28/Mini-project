@@ -18,8 +18,10 @@ public class Student extends Account {
     String nationality;
     Image img;
     int age;
+   
     
     public Student (String name, String email){
         super (name, email);
+        
     }
 }
