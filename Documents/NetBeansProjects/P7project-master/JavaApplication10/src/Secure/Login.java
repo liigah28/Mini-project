@@ -142,7 +142,8 @@ public class Login extends javax.swing.JFrame {
     private void txtRegisterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtRegisterActionPerformed
        new Registration().setVisible(true); //when you press the register button, the Registration JFrame pops up
        this.dispose(); //makes the current JFrame disapear
-
+       //mail = Mail.registrationMail()
+       //MailClient.send(mail)
     }//GEN-LAST:event_txtRegisterActionPerformed
 
     /**

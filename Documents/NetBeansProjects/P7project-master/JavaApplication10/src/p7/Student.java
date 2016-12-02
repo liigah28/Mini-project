@@ -19,9 +19,11 @@ public class Student extends Account {
     Image img;
     int age;
    
+     //@Column(name = "enabled")
+    //private boolean enabled;
     
     public Student (String name, String email){
         super (name, email);
-        
+        //this.enabled = false;
     }
 }
