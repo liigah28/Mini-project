@@ -43,117 +43,69 @@ public class Registration extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(255, 255, 255));
+        getContentPane().setLayout(null);
 
         txtFirstName.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         txtFirstName.setForeground(new java.awt.Color(0, 102, 0));
         txtFirstName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         txtFirstName.setText("First Name");
+        getContentPane().add(txtFirstName);
+        txtFirstName.setBounds(10, 56, 63, 17);
 
         txtEmail.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         txtEmail.setForeground(new java.awt.Color(0, 102, 0));
         txtEmail.setText("E-mail Address *");
+        getContentPane().add(txtEmail);
+        txtEmail.setBounds(10, 184, 97, 17);
 
         txtPass.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         txtPass.setForeground(new java.awt.Color(0, 102, 0));
         txtPass.setText("Password");
+        getContentPane().add(txtPass);
+        txtPass.setBounds(10, 249, 56, 17);
 
         txtConfirmPass.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         txtConfirmPass.setForeground(new java.awt.Color(0, 102, 0));
         txtConfirmPass.setText("Confirm Password");
+        getContentPane().add(txtConfirmPass);
+        txtConfirmPass.setBounds(10, 315, 107, 17);
+        getContentPane().add(jTextField2);
+        jTextField2.setBounds(20, 79, 219, 31);
+        getContentPane().add(jTextField3);
+        jTextField3.setBounds(20, 144, 219, 31);
+        getContentPane().add(jTextField4);
+        jTextField4.setBounds(20, 207, 219, 31);
 
         txtLastName.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         txtLastName.setForeground(new java.awt.Color(0, 102, 0));
         txtLastName.setText("Last Name");
+        getContentPane().add(txtLastName);
+        txtLastName.setBounds(10, 121, 61, 17);
+        getContentPane().add(jPasswordField1);
+        jPasswordField1.setBounds(16, 272, 223, 32);
+        getContentPane().add(jPasswordField2);
+        jPasswordField2.setBounds(16, 338, 223, 32);
 
         txtRegistration.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
         txtRegistration.setForeground(new java.awt.Color(0, 102, 0));
         txtRegistration.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         txtRegistration.setText("Registration");
+        getContentPane().add(txtRegistration);
+        txtRegistration.setBounds(53, 19, 135, 26);
 
+        txtRegister.setBackground(new java.awt.Color(102, 153, 0));
         txtRegister.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        txtRegister.setForeground(new java.awt.Color(0, 102, 0));
+        txtRegister.setForeground(new java.awt.Color(255, 255, 255));
         txtRegister.setText("Register");
         txtRegister.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtRegisterActionPerformed(evt);
             }
         });
+        getContentPane().add(txtRegister);
+        txtRegister.setBounds(80, 400, 95, 31);
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(txtConfirmPass))
-                    .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(txtPass))
-                    .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(10, 10, 10)
-                                .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 219, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(txtFirstName)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(10, 10, 10)
-                                .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 219, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(txtLastName)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jPasswordField1, javax.swing.GroupLayout.PREFERRED_SIZE, 223, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addGroup(layout.createSequentialGroup()
-                                    .addGap(10, 10, 10)
-                                    .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, 219, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addComponent(txtEmail))
-                            .addComponent(jPasswordField2, javax.swing.GroupLayout.PREFERRED_SIZE, 223, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(76, 76, 76)
-                        .addComponent(txtRegister))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(53, 53, 53)
-                        .addComponent(txtRegistration, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(14, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(19, 19, 19)
-                .addComponent(txtRegistration, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(txtFirstName)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(txtLastName)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(9, 9, 9)
-                .addComponent(txtEmail)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(txtPass)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPasswordField1, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(11, 11, 11)
-                .addComponent(txtConfirmPass)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPasswordField2, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(txtRegister)
-                .addContainerGap(40, Short.MAX_VALUE))
-        );
-
-        pack();
+        setBounds(0, 0, 269, 507);
     }// </editor-fold>//GEN-END:initComponents
 
     private void txtRegisterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtRegisterActionPerformed

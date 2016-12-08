@@ -6,24 +6,27 @@
 package p7;
 
 import java.awt.Image;
+import java.util.ArrayList;
 
 /**
  *
  * @author Liigah
  */
 public class Student extends Account {
+
     String description;
     String education;
-    String interest;
+    ArrayList<Integer> interest;
     String nationality;
     Image img;
     int age;
-   
-     //@Column(name = "enabled")
-    //private boolean enabled;
-    
-    public Student (String name, String email){
-        super (name, email);
-        //this.enabled = false;
+
+    public Student(String name, String email, ArrayList<Integer> interests) {
+        super(name, email);
+        interest = interests;
+    }
+
+    public String toString() {
+        return "Student: " + name;
     }
 }
